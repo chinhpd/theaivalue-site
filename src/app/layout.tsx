@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="vi">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <SpeedInsights /> {/* Thêm dòng này trước thẻ đóng body */}
       </body>
     </html>
   );
