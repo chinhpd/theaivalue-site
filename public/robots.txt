@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.theaivalue.com
+
+# Sitemaps
+Sitemap: https://www.theaivalue.com/sitemap.xml
